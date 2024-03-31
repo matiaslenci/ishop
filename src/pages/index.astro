@@ -1,10 +1,31 @@
 ---
+import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import Inicio from "./Inicio.astro";
+import Tienda from "./Tienda.astro";
 ---
 
 <Layout title="iShop - Tu nuevo iPhone al alcance de tu mano">
-  <main class="flex flex-col m-auto max-w-5xl px-4 items-center">
-   <Inicio/>
+  <main
+    class="flex flex-col items-center h-screen w-full overflow-auto snap-y snap-mandatory"
+  >
+    <Header />
+
+    <div class="snap-center">
+      <Inicio />
+    </div>
+    <div class="snap-center">
+      <Tienda />
+    </div>
+ 
   </main>
 </Layout>
+
+<style>
+  div {
+    margin: auto;
+    max-width: 64rem;
+    padding-left: 1rem /* 16px */;
+    padding-right: 1rem /* 16px */;
+  }
+</style>
