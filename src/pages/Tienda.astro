@@ -1,22 +1,22 @@
 ---
 import ButtonPrimary from "../components/ButtonPrimary.astro";
+import ColorPhonePro from "../components/ColorPhonePro.astro";
 import InfoiPhonePro from "../components/InfoiPhonePro.astro";
 import SelectPhone from "../components/SelectPhone.astro";
 ---
 
 <section
-  class="flex flex-col w-full md:flex-row items-center h-screen justify-between"
+  class="flex flex-col w-full gap-5 md:pt-10 md:flex-row items-center h-screen justify-center "
   id="tienda"
 >
-  <section class="flex flex-col justify-center">
-
-    <SelectPhone/>
-
+  <section class="flex flex-col items-center justify-center">
+    <SelectPhone />
+    <ColorPhonePro/>
   </section>
 
-  <section class="flex flex-col items-start gap-5 justify-end">
-      <InfoiPhonePro />
+  <section class="flex flex-col items-start gap-5 justify-end ">
+    <InfoiPhonePro />
 
-       <ButtonPrimary>Consultanos disponibilidad y precio</ButtonPrimary> 
+    <ButtonPrimary>Consultanos disponibilidad y precio</ButtonPrimary>
   </section>
 </section>
