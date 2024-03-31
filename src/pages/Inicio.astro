@@ -2,13 +2,28 @@
 import Hero from "../components/Hero.astro";
 ---
 
-<section class="flex flex-col gap-7 items-center h-screen justify-center md:justify-end ">
-  <Hero/>
-  <img src="../../public/img/iphone_mano.png" alt="" class="h-[40%] md:block hidden bottom-0">
+<section
+  class="flex flex-col gap-7 items-center h-screen justify-center md:justify-end"
+  id="inicio"
+>
+  <Hero />
+  <img
+    src="/img/iphone_mano.png"
+    alt=""
+    class="h-[40%] md:block hidden bottom-0"
+  />
 </section>
 
 <style>
-  section{
-    background: radial-gradient(circle at center,#f8d3f2,#ffff, #ffff)
+  section {
+    background: radial-gradient(circle at center, #f8d3f2, #ffff, #ffff);
+    
+  }
+
+  img{
+    mask-image:linear-gradient(
+      white 90%,
+      transparent
+    ) ;
   }
 </style>
