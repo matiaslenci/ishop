@@ -1,0 +1,30 @@
+---
+import ButtonHeader from "./ButtonHeader.astro";
+import Language from "./Language.astro";
+---
+
+<header class="flex justify-between fixed items-center top-0 py-4 px-10 w-full">
+  <span class="text-4xl font-bold w-[100px]">
+    <a href="/"> iShop </a>
+  </span>
+  <nav>
+    <ul
+      class="flex-row items-center justify-center flex text-xl [&>li>a]:inline-block [&>li>a]:font-semibold [&>li>a]:px-4 [&>li>a]:py-2"
+    >
+      <li>
+        <ButtonHeader href="/">Inicio</ButtonHeader>
+      </li>
+      <li>
+        <ButtonHeader href="#tienda">Tienda</ButtonHeader>
+      </li>
+      <li>
+        <ButtonHeader href="#reparaciones">Reparaciones</ButtonHeader>
+      </li>
+      <li>
+        <ButtonHeader href="#contacto">Contacto</ButtonHeader>
+      </li>
+    </ul>
+  </nav>
+  <Language/>
+  
+</header>
