@@ -7,14 +7,14 @@ import Tienda from "./Tienda.astro";
 
 <Layout title="iShop - Tu nuevo iPhone al alcance de tu mano">
   <main
-    class="flex flex-col items-center h-screen w-full overflow-auto snap-y snap-mandatory"
+    class="flex flex-col gap-y-5 md:gap-y-0 items-center h-screen w-full overflow-auto snap-y snap-mandatory"
   >
     <Header />
 
-    <div class="snap-center inicio">
+    <div class="md:snap-center inicio">
       <Inicio />
     </div>
-    <div class="snap-center">
+    <div class="md:snap-center">
       <Tienda />
     </div>
  

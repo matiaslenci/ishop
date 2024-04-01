@@ -5,11 +5,15 @@ interface Props {
 const { data } = Astro.props;
 ---
 
-<div class="flex md:flex-row gap-4 flex-col justify-start items-start">
+<div
+  class="flex md:flex-row gap-4 flex-col justify-center items-center md:justify-start md:items-start"
+>
   <div class="w-20 flex flex-row items-center justify-start">
     <slot />
   </div>
-  <ul class="flex flex-col gap-1 justify-start items-start w-full">
+  <ul
+    class="flex flex-col gap-1 text-center md:text-left justify-center items-center md:justify-start md:items-start w-full"
+  >
     {
       data.map((value: string) => {
         return <li class="text-base font-medium">{value}</li>;
