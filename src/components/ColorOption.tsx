@@ -5,7 +5,7 @@ interface ColorOptionProps {
   onClick: () => void;
   name: string;
   colorPhone: ColoriPhonePro | ColoriPhone;
-  selectedColor: ColoriPhonePro | ColoriPhone;
+  selectedColor: string;
 }
 
 export function ColorOption({

@@ -1,12 +1,16 @@
-import { ButtonSelectPhone } from "../components/ButtonSelectPhone";
 import { ColorPhonePro } from "../components/ColorPhonePro";
 import { ColorPhone } from "../components/ColorPhone";
 import { InfoiPhonePro } from "../components/InfoiPhonePro";
-import { SelectedPhone } from "../services/selected-phone.service";
 import { useEffect, useState } from "react";
+import { ColoriPhone, ColoriPhonePro } from "../enums";
 
 export function Tienda() {
-  const { selectPro } = SelectedPhone();
+  const [selectPro, setSelectPro] = useState(true);
+
+  const handleSelect = (select: boolean) => {
+    setSelectPro(select);
+  };
+
   const [selectedPhone, setSelectedComponent] = useState(<ColorPhonePro />);
 
   useEffect(() => {
@@ -17,13 +21,33 @@ export function Tienda() {
     }
   }, [selectPro]); // Especifica selectPro como una dependencia del efecto
 
+  const getButtonClasses = (isSelectedPro: boolean) => {
+    return isSelectedPro
+      ? "text-blue-500 border-4 border-blue-500 cursor-default px-2.5 py-1.5 text-lg md:px-5  md:py-3 font-semibold  md:text-xl text-center rounded-lg"
+      : "inline-flex items-center justify-center text-black hover:text-white cursor-pointer hover:bg-blue-500 px-5 py-3 font-semibold text-xl text-center rounded-lg";
+  };
+
   return (
     <section
       className="flex flex-col w-full gap-10 py-20 md:pb-0 md:pt-10 md:flex-row items-center md:h-screen justify-center"
       id="tienda"
     >
       <section className="flex flex-col gap-5 md:gap-0 items-center justify-center md:w-3/6">
-        <ButtonSelectPhone />
+        <section className="flex flex-row gap-3">
+          <button
+            onClick={() => handleSelect(true)}
+            className={getButtonClasses(selectPro)}
+          >
+            iPhone 15 Pro Max
+          </button>
+
+          <button
+            onClick={() => handleSelect(false)}
+            className={getButtonClasses(!selectPro)}
+          >
+            iPhone 15
+          </button>
+        </section>
         {selectedPhone}
       </section>
 
