@@ -1,4 +1,3 @@
-
 import { ButtonSelectPhone } from "../components/ButtonSelectPhone";
 import { ColorPhonePro } from "../components/ColorPhonePro";
 import { InfoiPhonePro } from "../components/InfoiPhonePro";
@@ -14,11 +13,11 @@ export function Tienda() {
         <ColorPhonePro />
       </section>
 
-      <section className="flex flex-col items-start gap-5 justify-end md:w-3/6 mx-auto px-5">
+      <section className="flex md:flex-col flex-col-reverse items-center md:items-start gap-5 justify-end md:w-3/6 mx-auto px-5">
         <InfoiPhonePro />
 
-        <a className="inline-flex items-center justify-center px-8 py-3 text-xl font-medium text-center text-white bg-blue-500 rounded-lg cursor-pointer  hover:shadow-lg  hover:bg-blue-600 focus:ring-4 focus:ring-blue-300">
-        Consultanos disponibilidad y precio
+        <a className="inline-flex items-center justify-center px-8 py-3 text-base md:text-xl font-medium text-center text-white bg-blue-500 rounded-lg cursor-pointer  hover:shadow-lg hover:bg-blue-600 focus:ring-4 focus:ring-blue-300">
+          Consultanos disponibilidad y precio
         </a>
       </section>
     </section>

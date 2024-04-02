@@ -18,7 +18,7 @@ export function ColorOption({
   colorPhone,
   selectedColor
 }: ColorOptionProps) {
-  const isColorSelected = selectedColor  == colorPhone ? "visible text-sm" : "invisible text-sm";
+  const isColorSelected = selectedColor  == colorPhone ? "visible text-sm font-medium" : "invisible text-sm font-medium";
 
   return (
     <div className="flex flex-col items-center gap-y-3">
