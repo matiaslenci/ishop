@@ -1,5 +1,6 @@
 import { ColoriPhonePro } from "../enums";
 import { SelectedPhone } from "../services/selected-phone.service";
+import { ColorOption } from "./ColorOption";
 
 export function ColorPhonePro() {
   const { colorPro, handleColorPro } = SelectedPhone();
@@ -11,25 +12,36 @@ export function ColorPhonePro() {
         alt=""
         className="w-80"
       />
-      <div className="[&>div]:rounded-full [&>div]:cursor-pointer [&>div]:shadow-lg [&>div]:size-10 flex flex-row gap-7">
-        <div
-          className="bg-[#837F7D]"
+      <div className="[&>div>span]:rounded-full [&>div>span]:cursor-pointer [&>div>span]:shadow-lg [&>div>span]:size-10 flex flex-row gap-7">
+        <ColorOption
+          color="#837F7D"
+          name="Gris"
+          colorPhone={ColoriPhonePro.gray}
           onClick={() => handleColorPro(ColoriPhonePro.gray)}
-        ></div>
-        <div
-          className="bg-[#2F4452]"
+          selectedColor={colorPro}
+        />
+        <ColorOption
+          color="#2F4452"
+          name="Azul"
+          colorPhone={ColoriPhonePro.blue}
           onClick={() => handleColorPro(ColoriPhonePro.blue)}
-        ></div>
-        <div
-          className="bg-[#DDDDDD]"
+          selectedColor={colorPro}
+        />
+        <ColorOption
+          color="#DDDDDD"
+          name="Blanco"
+          colorPhone={ColoriPhonePro.white}
           onClick={() => handleColorPro(ColoriPhonePro.white)}
-        ></div>
-        <div
-          className="bg-[#1B1B1B]"
+          selectedColor={colorPro}
+        />
+        <ColorOption
+          color="#1B1B1B"
+          name="Negro"
+          colorPhone={ColoriPhonePro.black}
           onClick={() => handleColorPro(ColoriPhonePro.black)}
-        ></div>
+          selectedColor={colorPro}
+        />
       </div>
-
     </div>
   );
 }
