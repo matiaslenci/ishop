@@ -17,13 +17,13 @@ export function ColorOption({
 }: ColorOptionProps) {
   const isColorSelected =
     selectedColor == colorPhone
-      ? "visible text-sm font-medium"
+      ? "visible text-sm font-medium "
       : "invisible text-sm font-medium";
 
   const ring = selectedColor == colorPhone ? " ring-4 ring-blue-500" : "";
 
   return (
-    <div className="flex flex-col items-center gap-y-3">
+    <div className="flex flex-col items-center gap-y-3 [&>span]:shadow-2xl">
       <span className={color + ring} onClick={onClick}></span>
       <p className={isColorSelected}>{name}</p>
     </div>
