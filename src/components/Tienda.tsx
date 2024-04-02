@@ -35,6 +35,11 @@ export function Tienda() {
       className="flex flex-col w-full gap-10 py-20 md:pb-0 md:pt-10 md:flex-row items-center md:h-screen justify-center"
       id="tienda"
     >
+      <h2
+      className="text-start text-4xl font-semibold tracking-tight text-gray-900 md:hidden "
+    >
+      Tienda
+    </h2>
       <section className="flex flex-col gap-5 md:gap-0 items-center justify-center md:w-3/6">
         <section className="flex flex-row gap-3">
           <button

@@ -4,16 +4,16 @@ import SettingIcon from "./icons/SettingIcon.astro";
 ---
 
 <section
-  class="flex flex-row items-center md:h-screen justify-start"
+  class="flex flex-col md:flex-row items-center md:h-screen justify-start"
   id="reparaciones"
 >
-  <div class="flex flex-col gap-4 justify-start md:ms-[14%] items-start">
+  <div class="flex flex-col gap-6 justify-start md:ms-[14%] mx-8 items-start">
     <h2
-      class="text-center text-2xl font-semibold tracking-tight text-gray-900 md:text-5xl"
+      class="text-center text-4xl font-semibold tracking-tight text-gray-900 md:text-5xl"
     >
       Reparaciones
     </h2>
-    <p class="md:text-xl text-lg font-medium">
+    <p class="text-xl font-medium">
       Confía en nuestros expertos para reparar tu iPhone rápidamente y a precios
       asequibles. Ofrecemos reparaciones para una variedad de problemas,
       incluyendo:
@@ -35,7 +35,7 @@ import SettingIcon from "./icons/SettingIcon.astro";
     <ButtonPrimary>Contactanos para una cotización gratuita</ButtonPrimary>
   </div>
   
-    <img src="/img/iphone_lado.png" alt="iphone de lado" class="pt-64 max-w-[53rem] max-h-[35rem]"/>
+    <img src="/img/iphone_lado.png" alt="iphone de lado" class="md:pt-64 hidden md:block md:max-w-[53rem] md:max-h-[35rem]"/>
   
 </section>
 
