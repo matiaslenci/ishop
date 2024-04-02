@@ -1,12 +1,18 @@
-import { useState } from "react";
-import { ColoriPhonePro } from "../enums";
+import {  useState } from "react";
+import { ColoriPhone, ColoriPhonePro } from "../enums";
 
 export function SelectedPhone() {
   const [selectPro, setSelectPro] = useState(true);
   const [colorPro, setColorPro] = useState(ColoriPhonePro.gray);
+  const [color, setColor] = useState(ColoriPhone.black);
+
 
   const handleColorPro = (color: ColoriPhonePro) => {
     setColorPro(color);
+  }
+
+  const handleColor = (color: ColoriPhone) => {
+    setColor(color);
   }
 
   const handleSelect = (select:boolean) => {
@@ -19,5 +25,5 @@ export function SelectedPhone() {
       : "inline-flex items-center justify-center text-black hover:text-white cursor-pointer hover:bg-blue-500 px-5 py-3 font-semibold text-xl text-center rounded-lg";
   };
 
-  return { selectPro,colorPro, handleSelect, getButtonClasses,handleColorPro };
+  return { selectPro,colorPro, handleSelect, getButtonClasses,handleColorPro,color,handleColor };
 }

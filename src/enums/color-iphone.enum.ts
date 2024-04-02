@@ -1,4 +1,4 @@
-export enum ColorPhone {
+export enum ColoriPhone {
   black = "black",
   blue = "blue",
   pink = "pink",
