@@ -12,8 +12,8 @@ export function CardInfoiPhone({ data, children }:CardInfoiPhoneProps) {
         {children}
       </div>
       <ul className="flex flex-col gap-1 text-center md:text-left justify-center items-center md:justify-start md:items-start w-full">
-        {data.map((value: string) => {
-          return <li className="text-base font-medium">{value}</li>;
+        {data.map((value: string,index:number) => {
+          return <li key={index} className="text-base font-medium">{value}</li>;
         })}
       </ul>
     </div>

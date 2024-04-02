@@ -1,7 +1,5 @@
 import { ColorPhone, ColoriPhonePro } from "../enums";
 
-import { SelectedPhone } from "../services/selected-phone.service";
-
 interface ColorOptionProps {
   color: string;
   onClick: () => void;
@@ -10,19 +8,21 @@ interface ColorOptionProps {
   selectedColor: ColoriPhonePro | ColorPhone;
 }
 
-
 export function ColorOption({
   color,
   onClick,
   name,
   colorPhone,
-  selectedColor
+  selectedColor,
 }: ColorOptionProps) {
-  const isColorSelected = selectedColor  == colorPhone ? "visible text-sm font-medium" : "invisible text-sm font-medium";
+  const isColorSelected =
+    selectedColor == colorPhone
+      ? "visible text-sm font-medium"
+      : "invisible text-sm font-medium";
 
   return (
     <div className="flex flex-col items-center gap-y-3">
-      <span className={`bg-[${color}]`} onClick={onClick}></span>
+      <span className={color} onClick={onClick}></span>
       <p className={isColorSelected}>{name}</p>
     </div>
   );
