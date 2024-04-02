@@ -2,7 +2,7 @@
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import Inicio from "./Inicio.astro";
-import Tienda from "./Tienda.astro";
+import { Tienda } from "./Tienda";
 ---
 
 <Layout title="iShop - Tu nuevo iPhone al alcance de tu mano">
@@ -15,9 +15,8 @@ import Tienda from "./Tienda.astro";
       <Inicio />
     </div>
     <div class="md:snap-center">
-      <Tienda />
+      <Tienda client:visible />
     </div>
- 
   </main>
 </Layout>
 
