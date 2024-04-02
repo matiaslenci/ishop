@@ -9,8 +9,8 @@ export function SelectedPhone() {
     setColorPro(color);
   }
 
-  const handleSelect = () => {
-    setSelectPro(!selectPro);
+  const handleSelect = (select:boolean) => {
+    setSelectPro(select);
   };
 
   const getButtonClasses = (isSelectedPro: boolean) => {

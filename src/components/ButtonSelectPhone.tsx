@@ -6,14 +6,14 @@ export function ButtonSelectPhone() {
   return (
     <section className="flex flex-row gap-3">
       <button
-        onClick={() => handleSelect()}
+        onClick={() => handleSelect(true)}
         className={getButtonClasses(selectPro)}
       >
         iPhone 15 Pro Max
       </button>
 
       <button
-        onClick={() => handleSelect()}
+        onClick={() => handleSelect(false)}
         className={getButtonClasses(!selectPro)}
       >
         iPhone 15
