@@ -1,4 +1,4 @@
-export enum ColorPhonePro {
+export enum ColoriPhonePro {
   black = "black",
   blue = "blue",
   gray = "gray",
