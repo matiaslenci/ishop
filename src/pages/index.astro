@@ -2,6 +2,7 @@
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import Inicio from "../components/Inicio.astro";
+import Reparaciones from "../components/Reparaciones.astro";
 import { Tienda } from "../components/Tienda";
 ---
 
@@ -16,6 +17,9 @@ import { Tienda } from "../components/Tienda";
     </div>
     <div class="md:snap-center">
       <Tienda client:visible />
+    </div>
+    <div class="md:snap-center">
+      <Reparaciones />
     </div>
   </main>
 </Layout>

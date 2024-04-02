@@ -1,0 +1,46 @@
+---
+import ButtonPrimary from "./ButtonPrimary.astro";
+import SettingIcon from "./icons/SettingIcon.astro";
+---
+
+<section
+  class="flex flex-row items-center md:h-screen justify-start"
+  id="reparaciones"
+>
+  <div class="flex flex-col gap-4 justify-start md:ms-[14%] items-start">
+    <h2
+      class="text-center text-2xl font-semibold tracking-tight text-gray-900 md:text-5xl"
+    >
+      Reparaciones
+    </h2>
+    <p class="md:text-xl text-lg font-medium">
+      Confía en nuestros expertos para reparar tu iPhone rápidamente y a precios
+      asequibles. Ofrecemos reparaciones para una variedad de problemas,
+      incluyendo:
+    </p>
+    <ul
+      class="md:text-xl text-lg font-medium space-y-2 [&>li]:flex [&>li]:gap-3 [&>li]:items-center"
+    >
+      <li>
+        <SettingIcon />
+        Pantallas rotas
+      </li>
+      <li>
+        <SettingIcon />Baterías agotadas
+      </li>
+      <li><SettingIcon />Problemas de carga</li>
+      <li><SettingIcon />Problemas de software</li>
+      <li>y más...</li>
+    </ul>
+    <ButtonPrimary>Contactanos para una cotización gratuita</ButtonPrimary>
+  </div>
+  
+    <img src="/img/iphone_lado.png" alt="iphone de lado" class="pt-64 max-w-[53rem] max-h-[35rem]"/>
+  
+</section>
+
+<style>
+  section {
+    background: radial-gradient(circle, #d0daff, #ffff, #ffff,#ffff);
+  }
+</style>
