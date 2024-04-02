@@ -3,6 +3,7 @@ import { ColorPhone } from "../components/ColorPhone";
 import { InfoiPhonePro } from "../components/InfoiPhonePro";
 import { useEffect, useState } from "react";
 import { ColoriPhone, ColoriPhonePro } from "../enums";
+import { InfoiPhone } from "../components/InfoiPhone";
 
 export function Tienda() {
   const [selectPro, setSelectPro] = useState(true);
@@ -11,15 +12,18 @@ export function Tienda() {
     setSelectPro(select);
   };
 
-  const [selectedPhone, setSelectedComponent] = useState(<ColorPhonePro />);
+  const [selectedPhone, setSelectedPhone] = useState(<ColorPhonePro />);
+  const [selectedInfo, setSelectedInfo] = useState(<InfoiPhonePro />);
 
   useEffect(() => {
     if (selectPro) {
-      setSelectedComponent(<ColorPhonePro />);
+      setSelectedPhone(<ColorPhonePro />);
+      setSelectedInfo(<InfoiPhonePro />);
     } else {
-      setSelectedComponent(<ColorPhone />);
+      setSelectedPhone(<ColorPhone />);
+      setSelectedInfo(<InfoiPhone />);
     }
-  }, [selectPro]); // Especifica selectPro como una dependencia del efecto
+  }, [selectPro]);
 
   const getButtonClasses = (isSelectedPro: boolean) => {
     return isSelectedPro
@@ -52,7 +56,7 @@ export function Tienda() {
       </section>
 
       <section className="flex md:flex-col flex-col-reverse items-center md:items-start gap-5 justify-end md:w-3/6 mx-auto px-5">
-        <InfoiPhonePro />
+        {selectedInfo}
         <a className="inline-flex items-center justify-center px-8 py-3 text-base md:text-xl font-medium text-center text-white bg-blue-500 rounded-lg cursor-pointer  hover:shadow-lg hover:bg-blue-600 focus:ring-4 focus:ring-blue-300">
           Consultanos disponibilidad y precio
         </a>

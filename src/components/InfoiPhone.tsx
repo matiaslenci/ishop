@@ -1,48 +1,40 @@
 import type { Iphone } from "../interfaces";
 import { CardInfoiPhone } from "./CardInfoiPhone";
 
-export function InfoiPhonePro() {
-
-   const data: Iphone = {
-    screen: [
-      "Pantalla Super Retina X./CardInfoiPhone",
-      "Tecnología ProMotion",
-      "Pantalla siempre activa",
-    ],
+export function InfoiPhone() {
+  const data: Iphone = {
+    screen: ["Pantalla Super Retina X./CardInfoiPhone"],
     desing: [
-      "Titanio con parte posterior de vidrio mate texturizado",
-      "Botón de Acción",
+      "Aluminio y vidrio con infusión de color",
+      "Interruptor Timbre/Silencio",
     ],
     processor: [
-      "Chip A17 Pro",
+      "Chip A16 Bionic",
       "CPU de 6 núcleos",
-      "GPU de 6 núcleos",
+      "GPU de 5 núcleos",
       "Neural Engine de 16 núcleos",
     ],
     camera: [
-      "Sistema de cámaras Pro Gran angular de 48 MP | Ultra gran angular | Teleobjetivo",
+      "Sistema avanzado de dos cámaras Gran angular de 48 MP | Ultra gran angular",
       "Fotos en superalta resolución (24 MP y 48 MP)",
     ],
-    batery: ["Hasta 29 horas de reproducción de video"],
-    usb: [
-      "USB-C",
-      "Compatible con USB 3 para transferencias hasta 20 veces más rápidas"
-    ]
+    batery: ["Hasta 20 horas de reproducción de video"],
+    usb: ["USB-C", "Compatible con USB 2"],
   };
 
   return (
     <div className="space-y-4">
       <CardInfoiPhone data={data.screen}>
-        <span className="font-semibold text-4xl">6.7″</span>
+        <span className="font-semibold text-4xl">6.1″</span>
       </CardInfoiPhone>
       <CardInfoiPhone data={data.desing}>
         <img src="/img/icon_screen.png" alt="" className="w-20 h-16" />
       </CardInfoiPhone>
       <CardInfoiPhone data={data.processor}>
-        <img src="/img/icon_A17.jpg" alt="" className="size-16" />
+        <img src="/img/icon_A16.jpg" alt="" className="size-16" />
       </CardInfoiPhone>
       <CardInfoiPhone data={data.camera}>
-        <img src="/img/icon_camara_pro.jpg" alt="" className="size-16" />
+        <img src="/img/icon_camara.jpg" alt="" className="size-16" />
       </CardInfoiPhone>
       <CardInfoiPhone data={data.batery}>
         <img src="/img/icon_battery.jpg" alt="" className="w-[75px] h-9" />
