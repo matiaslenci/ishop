@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import Inicio from "../components/Inicio.astro";
 import Reparaciones from "../components/Reparaciones.astro";
 import { Tienda } from "../components/Tienda";
+import Contacto from "../components/Contacto.astro";
 ---
 
 <Layout title="iShop - Tu nuevo iPhone al alcance de tu mano">
@@ -18,8 +19,11 @@ import { Tienda } from "../components/Tienda";
     <div class="md:snap-center">
       <Tienda client:visible />
     </div>
-    <div class="md:snap-center">
+    <div class="md:snap-center w-full reparaciones">
       <Reparaciones />
+    </div>
+    <div class="md:snap-center w-full contacto">
+      <Contacto />
     </div>
   </main>
 </Layout>
@@ -31,4 +35,17 @@ import { Tienda } from "../components/Tienda";
     padding-left: 1rem /* 16px */;
     padding-right: 1rem /* 16px */;
   }
+
+  .contacto {
+    background: linear-gradient(to top, #ffdbf8, #ffff);
+  }
+ .reparaciones {
+    background: radial-gradient(circle, #d0daff, #ffff, #ffff, #ffff);
+  }
+  @media only screen and (max-width: 768px) {
+  .reparaciones{
+    background:#ffff ;
+  }
+}
+ 
 </style>

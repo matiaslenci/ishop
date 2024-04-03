@@ -1,0 +1,30 @@
+---
+import MailIcon from "./icons/MailIcon.astro";
+import PhoneIcon from "./icons/PhoneIcon.astro";
+import WhatsappIcon from "./icons/WhatsappIcon.astro";
+---
+
+<section
+  class="flex flex-col  gap-9 md:gap-5 h-screen text-center items-center justify-center"
+  id="contacto"
+>
+  <div class="h-full flex flex-col justify-center items-center gap-7">
+    <h2 class="text-4xl font-semibold tracking-tight text-gray-900 md:text-5xl">
+      Contacto
+    </h2>
+    <p class="text-xl font-medium">
+      ¿Listo para reparar tu iPhone o tienes alguna pregunta?
+    </p>
+    <p class="text-xl font-medium">¡No dudes en contactarnos!</p>
+    <div
+      class="flex flex-row justify-center items-center mt-5 gap-16 [&>*]:cursor-pointer"
+    >
+      <WhatsappIcon />
+      <MailIcon />
+      <PhoneIcon />
+    </div>
+  </div>
+  <div>
+    <img src="/img/all_colors.png" alt="" class="h-36 md:h-56" />
+  </div>
+</section>
