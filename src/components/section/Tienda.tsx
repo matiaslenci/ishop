@@ -1,8 +1,8 @@
-import { ColorPhonePro } from "./ColorPhonePro";
-import { ColorPhone } from "./ColorPhone";
-import { InfoiPhonePro } from "./InfoiPhonePro";
+import { ColorPhonePro } from "../ColorPhonePro";
+import { ColorPhone } from "../ColorPhone";
+import { InfoiPhonePro } from "../InfoiPhonePro";
 import { useEffect, useState } from "react";
-import { InfoiPhone } from "./InfoiPhone";
+import { InfoiPhone } from "../InfoiPhone";
 
 export function Tienda() {
   const [selectPro, setSelectPro] = useState(true);
