@@ -25,9 +25,9 @@ export function ColorPhonePro() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-between gap-8">
-      <img src={getImagePath()} alt="" className="w-80" />
-      <div className="[&>div>span]:rounded-full [&>div>span]:cursor-pointer [&>div>span]:shadow-lg [&>div>span]:size-10 md:[&>div>span]:size-12 flex flex-row">
+    <div className="flex flex-col items-center justify-between gap-8 ">
+      <img src={getImagePath()} alt="" className="w-60 md:w-80" />
+      <div className="[&>div>span]:rounded-full [&>div>span]:cursor-pointer [&>div>span]:shadow-lg [&>div>span]:size-10 md:[&>div>span]:size-12 flex flex-row ">
         <ColorOption
           color="bg-[#837F7D]"
           name="Titanio natural"
