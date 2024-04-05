@@ -17,8 +17,8 @@ export function ColorOption({
 }: ColorOptionProps) {
   const isColorSelected =
     selectedColor == colorPhone
-      ? "visible text-sm font-medium "
-      : "invisible text-sm font-medium";
+      ? "visible text-sm font-medium text-center"
+      : "invisible text-sm font-medium text-center";
 
   const ring = selectedColor == colorPhone ? " ring-4 ring-blue-500" : "";
 
