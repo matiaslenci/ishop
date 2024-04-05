@@ -32,7 +32,7 @@ export function Tienda() {
 
   return (
     <section
-      className="flex flex-col w-full gap-10 py-20 md:pb-0 md:pt-10 md:flex-row items-center md:h-screen justify-center"
+      className="flex flex-col w-full md:mx-0 mx-2 gap-10 pb-20  md:pb-0 md:pt-10 md:flex-row items-center md:h-screen justify-center"
       id="tienda"
     >
       <h2
