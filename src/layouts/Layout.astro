@@ -13,12 +13,20 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta
+      name="description"
+      content="iShop tienda de venta y reparación de iPhones en Santa Fe Argentina.Tu nuevo iPhone al alcance
+      de tu mano. Servicio rápido y confiable. Reparación de pantallas, baterías y más. Visítanos hoy mismo."
+    />
+    <meta name="keywords" content="iShop, iPhone, reparación de iPhone, tienda de iPhone, reparación de pantalla de iPhone, reparación de batería de iPhone,iphone 15, iphone 15 PRO,iphone 15 PRO MAX">
+    <meta name="author" content="iShop">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta property="og:image" content="/public/img/ishop.webp" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body >
-      <slot />
+  <body>
+    <slot />
   </body>
 </html>
 <script
@@ -39,8 +47,8 @@ const { title } = Astro.props;
     scroll-behavior: smooth;
   }
 
-  @media (prefers-reduced-motion:reduce){
-    html{
+  @media (prefers-reduced-motion: reduce) {
+    html {
       scroll-behavior: auto;
     }
   }
