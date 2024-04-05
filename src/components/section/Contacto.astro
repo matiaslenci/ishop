@@ -2,6 +2,8 @@
 import MailIcon from "../icons/MailIcon.astro";
 import PhoneIcon from "../icons/PhoneIcon.astro";
 import WhatsappIcon from "../icons/WhatsappIcon.astro";
+import  allColors  from "../../../public/img/all_colors.png";
+import { Image } from "astro:assets";
 ---
 
 <section
@@ -25,6 +27,6 @@ import WhatsappIcon from "../icons/WhatsappIcon.astro";
     </div>
   </div>
   <div>
-    <img src="/img/all_colors.png" alt="" class="h-36 md:h-56" />
+    <Image src={allColors} alt="6 iphones in different colors" class="h-36 md:h-56" />
   </div>
 </section>

@@ -36,19 +36,19 @@ export function InfoiPhonePro() {
         <span className="font-semibold text-4xl">6.7″</span>
       </CardInfoiPhone>
       <CardInfoiPhone data={data.desing}>
-        <img src="/img/icon_screen.png" alt="" className="w-20 h-16" />
+        <img src="/img/icon_screen.png" alt="icon screen" className="w-20 h-16" />
       </CardInfoiPhone>
       <CardInfoiPhone data={data.processor}>
-        <img src="/img/icon_A17.jpg" alt="" className="size-16" />
+        <img src="/img/icon_A17.jpg" alt="icon processor A17 PRO" className="size-16" />
       </CardInfoiPhone>
       <CardInfoiPhone data={data.camera}>
-        <img src="/img/icon_camara_pro.jpg" alt="" className="size-16" />
+        <img src="/img/icon_camara_pro.jpg" alt="icon camera with 3 glasses" className="size-16" />
       </CardInfoiPhone>
       <CardInfoiPhone data={data.batery}>
-        <img src="/img/icon_battery.jpg" alt="" className="w-[75px] h-9" />
+        <img src="/img/icon_battery.jpg" alt="icon batery" className="w-[75px] h-9" />
       </CardInfoiPhone>
       <CardInfoiPhone data={data.usb}>
-        <img src="/img/icon_usb.png" alt="" className="ps-3 md:ps-0 w-16 h-6" />
+        <img src="/img/icon_usb.png" alt="icon usb-c" className="ps-3 md:ps-0 w-16 h-6" />
       </CardInfoiPhone>
     </div>
   );
