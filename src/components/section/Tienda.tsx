@@ -42,14 +42,14 @@ export function Tienda() {
     </h2>
       <section className="flex flex-col gap-5 md:gap-0 items-center justify-center md:w-3/6">
         <section className="flex flex-row gap-3">
-          <button
+          <button aria-label="Ver caracteristicas y colores del iphone 15 pro max"
             onClick={() => handleSelect(true)}
             className={getButtonClasses(selectPro)}
           >
             iPhone 15 Pro Max
           </button>
 
-          <button
+          <button aria-label="Ver caracteristicas y colores del iphone 15"
             onClick={() => handleSelect(false)}
             className={getButtonClasses(!selectPro)}
           >

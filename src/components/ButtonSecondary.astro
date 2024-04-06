@@ -1,5 +1,10 @@
+---
+const arial: string = Astro.props.arial;
+
+---
+
 <button
-  type="button"
+  type="button" aria-label={arial}
   class="text-blue-500 hover:text-white border-4 border-blue-500 hover:bg-blue-500 focus:ring-4 focus:outline-none hover:shadow-lg focus:ring-blue-300 font-medium text-base md:text-xl rounded-lg px-5 py-2.5 text-center"
 >
   <slot />
