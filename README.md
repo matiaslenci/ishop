@@ -1,54 +1,64 @@
-# Astro Starter Kit: Basics
 
-```sh
-npm create astro@latest -- --template basics
+<h1 align="center">iShop</h1>
+
+<h4 align="center">🚀Proyecto web construido con Reactjs y Astro</h4>
+
+
+
+<p align="center">
+<a href="https://ishop-apple.vercel.app/">Live Demo</a>
+- 
+<a href="https://www.figma.com/file/qkw0eYbO5raIVmEMSK8XDO/%F0%9F%93%B1-IShop?type=design&node-id=0-1&mode=design&t=HQ2zHSX0dGnRXSTp-0">Diseño en Figma</a> 
+-
+<a href="#contacto">Contacto</a>
+</p>
+
+---
+
+![screenshot](/public/screenshots/79shots_so.png)
+
+![screenshot](/public/screenshots/389shots_so.png)
+
+
+
+## Acerca del proyecto
+
+El objetivo de esta landing page es presentar de manera clara y concisa los servicios ofrecidos por IShop. Aquí encontrarás información sobre sus productos, servicios de reparación y formas de contacto.
+
+## Caracteristicas tenidas en cuenta
+- Performance
+- Accesibilidad
+- SEO
+- Diseño responsive
+- Experiencia de usuario
+
+## Instalación
+
+Clona este repositorio, necesitas isntalar [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/download/) y [pnpm](http://npmjs.com) en tu computadora . En tu linea de comandos ejecuta:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/matiaslenci/ishop.git
+
+# Go into the repository
+$ cd ishop
+
+# Install dependencies
+$ pnpm install
+
+# Run the app
+$ pnpm run dev
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🛠️Stack
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Para crear esta landing page utilice:
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+- [Astro](https://astro.build/)
+- [Reactjs](https://es.react.dev/)
+- [Tailwindcss](https://tailwindcss.com/)
+- [Typescript](https://www.typescriptlang.org/)
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Contacto
+- Linkedin: https://www.linkedin.com/in/matias-lenci-228828186/
+- Email: matiaslenci@gmail.com
