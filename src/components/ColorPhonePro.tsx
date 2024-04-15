@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { ColoriPhonePro } from "../enums";
 import { ColorOption } from "./ColorOption";
+import { getLangFromUrlReact, useTranslations } from "./i18n/utils";
+
+const lang:any = getLangFromUrlReact(window.location.href);
+
+const t = useTranslations(lang);
 
 export function ColorPhonePro() {
   const [colorPro, setColorPro] = useState(ColoriPhonePro.gray);
@@ -30,28 +35,28 @@ export function ColorPhonePro() {
       <div className="[&>div>span]:rounded-full [&>div>span]:cursor-pointer [&>div>span]:shadow-lg [&>div>span]:size-10 md:[&>div>span]:size-12 flex flex-row">
         <ColorOption
           color="bg-[#837F7D]"
-          name="Titanio natural"
+          name={t("colorpro.natural")}
           colorPhone={ColoriPhonePro.gray}
           onClick={() => handleColorPro(ColoriPhonePro.gray)}
           selectedColor={colorPro}
         />
         <ColorOption
           color="bg-[#2F4452]"
-          name="Titanio azul"
+          name={t("colorpro.blue")}
           colorPhone={ColoriPhonePro.blue}
           onClick={() => handleColorPro(ColoriPhonePro.blue)}
           selectedColor={colorPro}
         />
         <ColorOption
           color="bg-[#DDDDDD]"
-          name="Titanio blanco"
+          name={t("colorpro.white")}
           colorPhone={ColoriPhonePro.white}
           onClick={() => handleColorPro(ColoriPhonePro.white)}
           selectedColor={colorPro}
         />
         <ColorOption
           color="bg-[#1B1B1B]"
-          name="Titanio negro"
+          name={t("colorpro.black")}
           colorPhone={ColoriPhonePro.black}
           onClick={() => handleColorPro(ColoriPhonePro.black)}
           selectedColor={colorPro}

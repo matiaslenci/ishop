@@ -1,27 +1,33 @@
 ---
 import ButtonHeader from "./ButtonHeader.astro";
 import Language from "./Language.astro";
+import { getLangFromUrl, useTranslations } from "@/components/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<header class="flex justify-between md:fixed items-center z-40 top-0 py-4 px-10 w-full">
+<header
+  class="flex justify-between md:fixed items-center z-40 top-0 py-4 px-10 w-full"
+>
   <span class="text-4xl font-bold w-[100px]">
     <a href="/"> iShop </a>
   </span>
   <nav class="hidden md:block">
     <ul
-      class="flex-row  items-center justify-center flex text-xl [&>li>a]:inline-block [&>li>a]:font-semibold [&>li>a]:px-4 [&>li>a]:py-2"
+      class="flex-row items-center justify-center flex text-xl [&>li>a]:inline-block [&>li>a]:font-semibold [&>li>a]:px-4 [&>li>a]:py-2"
     >
       <li>
-        <ButtonHeader href="#inicio">Inicio</ButtonHeader>
+        <ButtonHeader href="#inicio">{t("nav.home")}</ButtonHeader>
       </li>
       <li>
-        <ButtonHeader href="#tienda">Tienda</ButtonHeader>
+        <ButtonHeader href="#tienda">{t("nav.shop")}</ButtonHeader>
       </li>
       <li>
-        <ButtonHeader href="#reparaciones">Reparaciones</ButtonHeader>
+        <ButtonHeader href="#reparaciones">{t("nav.repairs")}</ButtonHeader>
       </li>
       <li>
-        <ButtonHeader href="#contacto">Contacto</ButtonHeader>
+        <ButtonHeader href="#contacto">{t("nav.contact")}</ButtonHeader>
       </li>
     </ul>
   </nav>
