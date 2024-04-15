@@ -27,6 +27,7 @@ El objetivo de esta landing page es presentar de manera clara y concisa los serv
 
 ## Caracteristicas tenidas en cuenta
 - Performance
+- Selección de idioma
 - Accesibilidad
 - SEO
 - Diseño responsive
