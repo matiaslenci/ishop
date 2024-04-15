@@ -65,7 +65,7 @@ export const ui = {
     "colorpro.white": "White titanum",
     "colorpro.black": "Black titanum",
     "button.price": "Ask us about availability and price",
-    "repairs.title": "Reparaciones",
+    "repairs.title": "Repairs",
     "repairs.description":
       "Trust our experts to repair your iPhone quickly and affordably. We offer repairs for a variety of issues, including:",
     "repairs.screen": "Broken screens",
