@@ -3,6 +3,10 @@ import { ColorPhone } from "../ColorPhone";
 import { InfoiPhonePro } from "../InfoiPhonePro";
 import { useEffect, useState } from "react";
 import { InfoiPhone } from "../InfoiPhone";
+import { getLangFromUrlReact, useTranslations } from "../i18n/utils";
+
+const lang: any = getLangFromUrlReact(window.location.href);
+const t = useTranslations(lang);
 
 export function Tienda() {
   const [selectPro, setSelectPro] = useState(true);
@@ -35,21 +39,21 @@ export function Tienda() {
       className="flex flex-col w-full md:px-0 px-2 gap-10 pb-20  md:pb-0 md:pt-10 md:flex-row items-center md:h-screen justify-center"
       id="tienda"
     >
-      <h2
-      className="text-start text-4xl font-semibold tracking-tight text-gray-900 md:hidden "
-    >
-      Tienda
-    </h2>
+      <h2 className="text-start text-4xl font-semibold tracking-tight text-gray-900 md:hidden ">
+        Tienda
+      </h2>
       <section className="flex flex-col gap-5 md:gap-0 items-center justify-center md:w-3/6">
         <section className="flex flex-row gap-3">
-          <button aria-label="Ver caracteristicas y colores del iphone 15 pro max"
+          <button
+            aria-label="Ver caracteristicas y colores del iphone 15 pro max"
             onClick={() => handleSelect(true)}
             className={getButtonClasses(selectPro)}
           >
             iPhone 15 Pro Max
           </button>
 
-          <button aria-label="Ver caracteristicas y colores del iphone 15"
+          <button
+            aria-label="Ver caracteristicas y colores del iphone 15"
             onClick={() => handleSelect(false)}
             className={getButtonClasses(!selectPro)}
           >
@@ -62,7 +66,7 @@ export function Tienda() {
       <section className="flex md:flex-col flex-col-reverse items-center md:items-start gap-5 justify-end md:w-3/6 mx-auto px-5">
         {selectedInfo}
         <a className="inline-flex items-center justify-center px-8 py-3 text-base md:text-xl font-medium text-center text-white bg-blue-500 rounded-lg cursor-pointer  hover:shadow-lg hover:bg-blue-600 focus:ring-4 focus:ring-blue-300">
-          Consultanos disponibilidad y precio
+          {t("button.price")}
         </a>
       </section>
     </section>

@@ -2,6 +2,10 @@
 import MailIcon from "../icons/MailIcon.astro";
 import PhoneIcon from "../icons/PhoneIcon.astro";
 import WhatsappIcon from "../icons/WhatsappIcon.astro";
+import { getLangFromUrl, useTranslations } from "@/components/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section
@@ -10,12 +14,12 @@ import WhatsappIcon from "../icons/WhatsappIcon.astro";
 >
   <div class="h-full flex flex-col justify-center items-center gap-7">
     <h2 class="text-4xl font-semibold tracking-tight text-gray-900 md:text-5xl">
-      Contacto
+      {t('contact.title')}
     </h2>
     <p class="text-xl font-medium">
-      ¿Listo para reparar tu iPhone o tienes alguna pregunta?
+      {t('contact.ask')}
     </p>
-    <p class="text-xl font-medium">¡No dudes en contactarnos!</p>
+    <p class="text-xl font-medium">{t('contact.subtitle')}</p>
     <div
       class="flex flex-row justify-center items-center mt-5 gap-16 [&>*]:cursor-pointer"
     >
